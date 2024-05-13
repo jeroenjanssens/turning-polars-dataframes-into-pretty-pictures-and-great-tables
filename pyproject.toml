@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "python-polars-the-definitive-guide"
+version = "0.1.0"
+description = "Python Polars: The Definitive Guide"
+authors = ["Jeroen Janssens <jeroen@jeroenjanssens.com>, Thijs Nieuwdorp <thijsnieuwdorp@hotmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+chardet = "^5.1.0"
+connectorx = "^0.3.2"
+hvplot = "^0.9.2"
+matplotlib = "^3.8.4"
+numpy = "^1.24.3"
+openpyxl = "^3.1.2"
+pandas = "^2.1.4"
+polars = "^0.20.22"
+pyarrow = "^14.0.2"
+python = "^3.11"
+s3fs = "^2023.6.0"
+xlsx2csv = "^0.8.2"
+xlsxwriter = "^3.1.2"
+fastexcel = "^0.9.1"
+scipy = "^1.12.0"
+plotly = "^5.19.0"
+plotnine = "^0.13.5"
+altair = "^5.3.0"
+vl-convert-python = "^1.2.4"
+vegafusion = "^1.6.6"
+vegafusion-python-embed = "^1.6.6"
+textblob = "^0.18.0.post0"
+scikit-learn = "^1.4.2"
+great-tables = "^0.5.0"
+bokeh = "^3.4.1"
+holoviews = "^1.18.3"
+dask = "^2024.4.2"
+geoviews = "^1.12.0"
+vega-datasets = "^0.9.0"
+
+[tool.poetry.group.dev.dependencies]
+cairosvg = "^2.7.1"
+colorlog = "^6.8.0"
+jupyter = "^1.0.0"
+jupyterlab = "^4.1.8"
+lxml = "^4.9.4"
+nbconvert = "^7.13.1"
+nbformat = "^5.9.2"
+pre-commit = "^3.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = ["E", "F"]
+ignore = ["E402", "F401"]
